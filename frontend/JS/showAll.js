@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function displayProducts(products) { //funzione che mi permette di visualizzare i prodotti nella tabella
-    //const table = document.createElement('table');
     const table = document.getElementById("Table");
     const headerRow = table.insertRow();
     headerRow.innerHTML = "<thead><td><b>ID</b></td><td><b>Nome</b></td><td><b>Marca</b></td><td><b>Prezzo</b></td><td><b>Actions</b></td></thead>";
