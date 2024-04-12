@@ -45,7 +45,7 @@ function Create(){
     const marcaValue = document.getElementById("Marca").value;
     const prezzoValue = document.getElementById("Prezzo").value;
 
-    const dataToUpdate = {  
+    const dataToCreate = {  
     data: {
         type: 'products',
         attributes: {
@@ -61,7 +61,7 @@ function Create(){
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(dataToUpdate)
+        body: JSON.stringify(dataToCreate)
     };
 
     fetch(`http://localhost:8000/products`, requestOptions)
