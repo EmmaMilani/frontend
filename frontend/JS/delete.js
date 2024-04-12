@@ -67,14 +67,8 @@ function Delete(product_id){
             if (!response.ok) {
                 throw new Error('Errore richiesta: ' + response.status);
             }
-            /*if(response.json() != null){
-                console.log("Errore: " + JSON.stringify(response.json()));
-            } else {
-                return response.json();
-            }*/
         })
         .then(data => {
-            //console.log('Risposta ricevuta:', data);
             const row = document.getElementById("row_" + product_id);
             row.remove();
             closeModal();
